@@ -2,21 +2,22 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Wyncode MovieFinder</title>
+    <title>Movie Ratings</title>
   </head>
   <body>
-    <h1>Wyncode MovieFinder Search Results</h1>
+    <h1>MovieFinder Ratings</h1>
 
     <form>
     	<input type="search" name="title">
     	<button type="search">Find Movie</button>
     </form>
 
-    <h2><%= @movie.title %></h2>
-
+    <h2><%= @movie.title + " " + @movie.year %></h2>
+   
+    <p><%= @movie.rating %></p>
+    <p><%= @movie.tomatoes %></p>
     <p><%= @movie.plot %></p>
 
-    <a href="/movie/">Check Movie Ratings</a>
-
+     
   </body>
 </html>
